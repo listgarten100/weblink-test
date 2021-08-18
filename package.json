@@ -10,8 +10,8 @@
     "build": "cross-env NODE_ENV=production webpack --mode production",
     "start": "cross-env NODE_ENV=development webpack-cli serve --mode development --open chrome",
     "test": "npx webpack --profile --json > stats.json && webpack-bundle-analyzer stats.json dist/",
-    "lint": "eslint ./src",
-    "lint:fix": "eslint ./src --fix"
+    "lint": "eslint ./src/**/*.ts",
+    "lint:fix": "eslint ./src/**/*.ts --fix"
   },
   "author": "",
   "license": "ISC",
